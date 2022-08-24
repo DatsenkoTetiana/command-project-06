@@ -12,6 +12,8 @@ html {
 img {
   display: block;
   max-width: 100%;
+  object-fit: cover;
+    object-position: center;
 }
 h1,
 h2,
@@ -27,4 +29,15 @@ ol {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.page {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
 }
