@@ -39,6 +39,8 @@
 }
 
 .customers__desc {
+  margin-bottom: 42px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -46,4 +48,8 @@
   line-height: calc(19 / 16);
 
   color: var(--main-txt-color);
+}
+
+.customers__container {
+  display: flex;
 }
