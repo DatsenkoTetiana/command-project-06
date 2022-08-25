@@ -24,9 +24,12 @@
   color: var(--main-txt-color);
 }
 
-.customers__wrapper {
+.customers__item {
   width: 100%;
   padding: 8px;
+
+  border-radius: 0px 30px 30px 30px;
+  outline: 1px solid tomato;
 }
 
 .wrapper__icon {
