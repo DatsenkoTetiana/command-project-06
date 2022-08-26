@@ -1,6 +1,8 @@
 .footer {
   @extend %container;
   @extend %section;
+
+  padding-bottom: 100px;
 }
 
 .footer__wrap {
@@ -132,6 +134,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+
   font-size: 10px;
   line-height: calc(12 / 10);
 
@@ -160,6 +163,10 @@
     justify-content: space-between;
     margin-bottom: 40px;
   }
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .information__link {
@@ -182,4 +189,11 @@
   line-height: calc(10 / 12);
 
   color: #2c2c2c;
+}
+
+.information__wrap {
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
 }
