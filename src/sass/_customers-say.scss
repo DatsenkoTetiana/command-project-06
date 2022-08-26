@@ -42,6 +42,13 @@
   }
 }
 
+.customers__list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    gap:32px ;
+  }
+}
+
 .customers__item {
   width: 100%;
   padding: 8px;
@@ -57,6 +64,7 @@
 
   @media screen and(min-width:768px) {
     width: 336px;
+    padding: 12px;
   }
 }
 
