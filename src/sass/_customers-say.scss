@@ -14,7 +14,12 @@
   @media screen and(max-width:480px) {
     width: 100%;
     height: 769px;
-    background-image: url();
+    background-image: url(../images/customers-say/Rectangle\ 701.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers-say/Rectangle\ 701@2x.png);
+    }
   }
 
   @media screen and(min-width:768px) {
@@ -31,6 +36,12 @@
   @media screen and(min-width:1280px) {
     width: 1280px;
     height: 647px;
+    background-image: url(../images/customers-say/Rectangle\ 707.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers-say/Rectangle\ 707@2x.png);
+    }
   }
 }
 
@@ -82,7 +93,6 @@
   background-color: #ffffff;
 
   border-radius: 0px 30px 30px 30px;
-  outline: 1px solid tomato;
 
   @media screen and(max-width:480px) {
     width: 100%;
