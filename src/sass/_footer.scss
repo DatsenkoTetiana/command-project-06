@@ -2,7 +2,13 @@
   @extend %container;
   @extend %section;
 
-  padding-bottom: 100px;
+  @media screen and(max-width:480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:768px) {
+    padding-bottom: 100px;
+  }
 }
 
 .footer__wrap {
