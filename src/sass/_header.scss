@@ -1,0 +1,120 @@
+.header {
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: none;
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+    }
+
+    gap: 28px;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 28px;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: #000000;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-bg-color);
+        text-decoration: underline;
+    }
+}
+
+.nav__link--current {
+    color: var(--accent-bg-color);
+    text-decoration: underline;
+}
+
+.nav__btn {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    background-color: var(--accent-bg-color);
+    border-radius: 30px;
+    border: none;
+    color: var(--main-txt-color);
+    padding: 5px 16px;
+    cursor: pointer;
+}
+
+.btn__mobile,
+.burger__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 11px;
+    height: 11px;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.icon__menu-mobile {
+    width: 23px;
+    height: 16px;
+}
+
+.burger__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.burger__menu {
+    display: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 130px;
+    height: 255px;
+    z-index: 1000;
+    border-radius: 30px 0px 30px 30px;
+    // pointer-events: none;
+    // visibility: hidden;
+    margin-left: auto;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.burger__container {
+    width: 100%;
+    height: 100%;
+}
+
+.burger-nav__item {
+    padding: 16px;
+}
+
+.burger-nav__link {
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+}
