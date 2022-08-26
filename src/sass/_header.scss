@@ -66,6 +66,11 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 11px;
+    height: 11px;
 
     @media screen and (min-width: 767px) {
         display: none;
@@ -83,24 +88,28 @@
 }
 
 .burger__menu {
+    display: none;
     margin: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 130px;
     height: 255px;
-    border-radius: 30px 0px 0px 0px;
+    z-index: 1000;
+    border-radius: 30px 0px 30px 30px;
+    // pointer-events: none;
+    // visibility: hidden;
+    margin-left: auto;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 
 .burger__container {
-    padding: 16px;
     width: 100%;
     height: 100%;
 }
 
 .burger-nav__item {
-    background-color: var(--accent-bg-color);
+    padding: 16px;
 }
 
 .burger-nav__link {
