@@ -1,13 +1,6 @@
 .footer {
   @extend %container;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and(min-width:768px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+  @extend %section;
 }
 
 .footer__wrap {
@@ -63,6 +56,12 @@
   color: #2c2c2c;
 }
 
+.form__wrap {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
+
 .form__label {
   display: block;
   margin-bottom: 20px;
@@ -99,8 +98,6 @@
   width: 103px;
   height: 42px;
   padding: 11px 22px;
-  margin-left: auto;
-  margin-bottom: 20px;
 
   background-color: #ffffff;
   border: 0.854167px solid #7eb101;
@@ -114,6 +111,11 @@
 
   color: #2c2c2c;
   cursor: pointer;
+
+  @media screen and(min-width:480px) {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .privacy__link {
