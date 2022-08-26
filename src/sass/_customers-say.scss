@@ -1,14 +1,16 @@
 .customers {
-  @extend %container;
+  @extend %section;
 }
 
 
 .customers__overlay {
+  @extend %container;
   width: 100%;
   height: 769px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/src/images/icons.svg#bg-mob-2);
+  background-position: center;
+  background-image: url(../images/icons.svg#bg-mob-2);
 
   padding-left: 20px;
   padding-right: 20px;
