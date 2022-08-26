@@ -1,0 +1,63 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.page {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+:root {
+  --main-font:font-family: "Roboto", sans-serif;
+  --secondary-font:font-family: "Kalam", cursive;
+  --main-txt-color:#2C2C2C;
+  --accent-bg-color:#BBF330;
+  --accent-txt-color:#7EB101;
+  --accent-br-color:#FFE550;
+  --gradient-color:radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+}/*# sourceMappingURL=index.css.map */
