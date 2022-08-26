@@ -1,8 +1,18 @@
 .customers {
-  @extend %container;
+  @media screen and (max-width: 480px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
-  padding-left: 20px;
-  padding-right: 20px;
+  @media screen and(min-width:768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and(min-width:1280px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .customers__overlay {
@@ -25,6 +35,7 @@
   @media screen and(min-width:768px) {
     font-size: 42px;
     line-height: calc(49 / 42);
+    padding-top: 100px;
   }
 }
 
@@ -45,26 +56,39 @@
 .customers__list {
   @media screen and(min-width:768px) {
     display: flex;
-    gap:32px ;
+    gap: 32px;
+  }
+
+  @media screen and(min-width:1280px) {
+    gap: 139px;
   }
 }
 
 .customers__item {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 24px;
   background-color: #ffffff;
 
   border-radius: 0px 30px 30px 30px;
   outline: 1px solid tomato;
 
-  &:last-child {
-    margin-bottom: 0px;
+  @media screen and(max-width:480px) {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   @media screen and(min-width:768px) {
     width: 336px;
+    margin-bottom: 0px;
     padding: 12px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 501px;
+    padding: 14px;
   }
 }
 
