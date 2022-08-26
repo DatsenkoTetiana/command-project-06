@@ -2,12 +2,19 @@
   @extend %container;
 }
 
+
 .customers__overlay {
   width: 100%;
   height: 769px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/src/images/icons.svg#bg-mob-2);
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+
 }
 
 .customers__titel {
@@ -107,6 +114,7 @@
 
 .customers__container {
   display: flex;
+
 }
 
 .customer__img {
