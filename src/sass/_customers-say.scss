@@ -1,8 +1,20 @@
 .customers {
+  @extend %section;
+}
+
+
+.customers__overlay {
   @extend %container;
+  width: 100%;
+  height: 769px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/icons.svg#bg-mob-2);
 
   padding-left: 20px;
   padding-right: 20px;
+
 
 
 }
@@ -15,23 +27,68 @@
   font-size: 28px;
   line-height: calc(33 / 28);
   color: var(--main-txt-color);
+
+  @media screen and(min-width:768px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+
+  @media screen and(min-width:1280px) {
+    padding-top: 100px;
+  }
 }
 
 .customers__text {
-  margin-bottom: 23px;
+  margin-bottom: 32px;
 
   font-family: var(--main-font);
   font-size: 14px;
   line-height: calc(16 / 14);
   color: var(--main-txt-color);
+
+  @media screen and(min-width:768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+}
+
+.customers__list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    gap: 32px;
+  }
+
+  @media screen and(min-width:1280px) {
+    gap: 139px;
+  }
 }
 
 .customers__item {
-  width: 100%;
-  padding: 8px;
+  background-color: #ffffff;
 
   border-radius: 0px 30px 30px 30px;
   outline: 1px solid tomato;
+
+  @media screen and(max-width:480px) {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    width: 336px;
+    margin-bottom: 0px;
+    padding: 12px;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 501px;
+    padding: 14px;
+  }
 }
 
 .customers__icon {
@@ -50,8 +107,50 @@
   line-height: calc(19 / 16);
 
   color: var(--main-txt-color);
+
+  @media screen and(min-width:768px) {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
 }
 
 .customers__container {
   display: flex;
+
+}
+
+.customer__img {
+  margin-right: 16px;
+}
+
+.customer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94px;
+  height: 52px;
+
+  border: 0.854167px solid #7eb101;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.customer__subtitel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.6667px;
+  line-height: 150%;
+
+  color: #2c2c2c;
+}
+
+.customer__subtext {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+
+  color: #2c2c2c;
 }
