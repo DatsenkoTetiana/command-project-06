@@ -11,10 +11,11 @@
     padding-bottom: 100px;
     padding-top: 100px;
   }
+
 }
 
 .desctop__wrap {
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width: 1280px) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
