@@ -147,3 +147,20 @@
 
   background-color: #ffffff;
 }
+
+.offerings__box--titel {
+  margin-bottom: 16px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(21 / 18) 21px;
+
+  color: #2c2c2c;
+
+  @media screen and(min-width:1280px) {
+    font-size: 18px;
+    line-height: calc(25 / 18);
+  }
+}
