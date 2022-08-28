@@ -1,0 +1,136 @@
+.subscribe {
+  @extend %section;
+  padding-top: 0;
+
+  &__container {
+    @extend %container;
+    position: relative;
+    width: 100%;
+  }
+
+  &__img {
+    width: 161px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and(min-width: 768px) {
+      width: 281px;
+       margin-left: auto;
+      margin-right: 0;
+      }
+
+             @media screen and(min-width: 1280px) {
+               width: 546px;
+              
+             }
+  }
+  &__title {
+    font-family: var(--main-font);
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    color: var(--main-txt-color);
+    margin-top: 17px;
+    margin-bottom: 20px;
+
+    @media screen and(min-width: 768px) {
+      font-size: 42px;
+      line-height: calc(50 / 42);
+      margin-top: 20px;
+    }
+
+        @media screen and(min-width: 1280px) {
+          font-size: 42px;
+          line-height: calc(50 / 42);
+          margin-top: 0px;
+        }
+  }
+
+  &__desc {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--main-txt-color);
+    margin-bottom: 40px;
+
+    @media screen and(min-width:768px) {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.subscribe-form {
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  
+  &__input {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    border: 0.85px Solid #ffe550;
+    border-radius: 30px;
+    background-color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+    outline: transparent;
+    background-color: #fff;
+    font-family: var(--main-font);
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: #505050;
+    
+
+    &:focus {
+      color: #2c2c2c;
+    }
+
+    &:valid:not(:placeholder-shown) {
+      border-color: #7eb101;
+    }
+
+    &:invalid:required:not(:placeholder-shown) {
+      border-color: #ff705d;
+    }
+
+         @media screen and (min-width: 768px) {
+            width: 394px; 
+            margin-bottom: 0;
+                      
+         }
+  }
+
+  &__icon {
+    display: none;
+  }
+}
+
+.subscribe-button {
+  display: block;
+  width: 103px;
+  height: 42px;
+  margin-left: auto;
+  padding: 11px 22px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  color: #2c2c2c;
+
+  border: none;
+  background-color: #bbf330;
+  border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }margin-left: 22px;
+
+  &:hover,
+  :focus {
+    background-color: #b5ff00;
+  }
+}
