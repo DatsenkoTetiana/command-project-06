@@ -5,27 +5,27 @@
         <picture>
           <source
             srcset="
-              ./images/offerings/apple-201w.png 1x,
-              ./images/offerings/apple-403w.png 2x
+              ./images/offerings/apple-mobile-201w.png 1x,
+              ./images/offerings/apple-mobile-403w.png 2x
             "
-            media="(max-width: 767.98px)"
-            sizes="(min-width: 320px) 201px, 100vw"
+            media="(max-width:320px)"
+            sizes="(min-width:480px) 201px, 403px"
           />
           <source
             srcset="
-              ./images/offerings/apple-257w.png 1x,
-              ./images/offerings/apple-514w.png 2x
+              ./images/offerings/apple-tablet-1-257w.png 1x,
+              ./images/offerings/apple-tablet-1-514w.png 2x
             "
-            media="(max-width: 1279px)"
-            sizes="(min-width: 768px) 257px, 100vw"
+            media="(max-width:1279px)"
+            sizes="(min-width:768px) 257px, 514px"
           />
           <source
             srcset="
               ./images/offerings/apple-396w.png 1x,
               ./images/offerings/apple-792w.png 2x
             "
-            media="(min-width: 1280px)"
-            sizes="(min-width: 1280px) 396px, 100vw"
+            media="(min-width:1280px)"
+            sizes="(min-width:1280px) 396px, 100vw"
           />
           <img
             class="apple__big"
@@ -37,22 +37,42 @@
         </picture>
       </li>
       <li class="apple__item">
-        <img
-          class="apple__medium"
-          src="./images/offerings/apple-tablet-1-257w.png"
-          alt="medium apple"
-          width="166px"
-          height="210px"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/offerings/apple-tablet-2-166w.png 1x,
+              ./images/offerings/apple-tablet-2-332w.png 2x
+            "
+            media="(max-width:1279px)"
+            sizes="(min-width:768px) 166px, 332px"
+          />
+          <img
+            class="apple__medium"
+            src="./images/offerings/apple-tablet-2-166w.png"
+            alt="medium apple"
+            width="166px"
+            height="210px"
+          />
+        </picture>
       </li>
       <li class="apple__item">
-        <img
-          class="apple__small"
-          src="./images/offerings/apple-mobile-201w.png"
-          alt="small apple"
-          width="108px"
-          height="136px"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/offerings/apple-tablet-3-108w.png 1x,
+              ./images/offerings/apple-tablet-3-216w.png 2x
+            "
+            media="(max-width:1279px)"
+            sizes="(min-width:768px) 108px, 216px"
+          />
+          <img
+            class="apple__small"
+            src="./images/offerings/apple-tablet-3-108w.png"
+            alt="small apple"
+            width="108px"
+            height="136px"
+          />
+        </picture>
       </li>
     </ul>
     <h2 class="offerings__titel">What&#10076;s Special About Our Offerings</h2>
