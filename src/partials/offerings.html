@@ -1,24 +1,27 @@
 <section class="offerings offerings__overlay">
   <div class="offerings__container">
-    <ul>
-      <li>
+    <ul class="apple__list">
+      <li class="apple__item">
         <img
+          class="apple__big"
           src="./images/offerings/apple-396.png"
           alt="big apple"
           width="396px"
           height="502px"
         />
       </li>
-      <li>
+      <li class="apple__item">
         <img
+          class="apple__medium"
           src="./images/offerings/apple-tablet-2-166.png"
           alt="medium apple"
           width="166px"
           height="210px"
         />
       </li>
-      <li>
+      <li class="apple__item">
         <img
+          class="apple__small"
           src="./images/offerings/apple-tablet-3-108.png"
           alt="small apple"
           width="108px"
@@ -26,29 +29,33 @@
         />
       </li>
     </ul>
-    <h2>What&#10076;s Special About Our Offerings</h2>
-    <p>
+    <h2 class="offerings__titel">What&#10076;s Special About Our Offerings</h2>
+    <p class="offerings__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
-    <svg class="" width="32" height="32">
-      <use href="/src/images/icons.svg#rocket"></use>
-    </svg>
-    <h3>Fasest Delivery</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros.
-    </p>
-    <svg class="" width="32" height="32">
-      <use href="/src/images/icons.svg#touch-app"></use>
-    </svg>
-    <h3>Easy To Order</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros.
-    </p>
-    <button type="Order Now"></button>
+    <div class="offerings__box--left">
+      <svg class="offerings__box--icon" width="32" height="32">
+        <use href="/src/images/icons.svg#rocket"></use>
+      </svg>
+      <h3 class="offerings__box--titel">Fasest Delivery</h3>
+      <p class="offerings__box--text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros.
+      </p>
+    </div>
+    <div class="offerings__box--right">
+      <svg class="offerings__box--icon" width="32" height="32">
+        <use href="/src/images/icons.svg#touch-app"></use>
+      </svg>
+      <h3 class="offerings__box--titel">Easy To Order</h3>
+      <p class="offerings__box--text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros.
+      </p>
+    </div>
+    <button class="offerings__btn" type="button">Order Now</button>
     <a href=""
       >Read More
       <svg class="" width="14" height="14">
