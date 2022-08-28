@@ -218,7 +218,12 @@
   }
 }
 
+.container__link {
+  display: flex;
+}
+
 .offerings__link {
+  display: flex;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
