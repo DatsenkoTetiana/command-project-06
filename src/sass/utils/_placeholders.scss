@@ -1,16 +1,30 @@
+%section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+}
+
 %container {
   margin: 0 auto;
-  padding: 0 10px;
-  @media screen and (max-width: 480px) {
-    max-width: 100%;
+  padding: 0 20px;
+  margin: 0;
+
+  @media screen and (min-width: 320px) {
+    width: 100%;
   }
+
   @media screen and (min-width: 480px) {
-    width: 312px;
+    width: 480px;
+    margin: 0 auto;
   }
+
   @media screen and (min-width: 768px) {
-    width: 736px;
-    padding: 0 16px;
+    width: 768px;
+    padding: 0 32px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding: 0 16px;
