@@ -1,5 +1,5 @@
 .hero {
-    @extend %section;
+    padding: 60px 0;
 
     @media screen and (min-width: 1280px) {
         margin-top: 0;
