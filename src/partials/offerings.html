@@ -2,18 +2,39 @@
   <div class="offerings__container">
     <ul class="apple__list">
       <li class="apple__item">
-        scr=" ./images/team/img-1-270.jpg 270w, ./images/team/img-1-354.jpg
-        354w, ./images/team/img-1-450.jpg 450w, ./images/team/img-1-540.jpg
-        540w, ./images/team/img-1-708.jpg 708w, ./images/team/img-1-900.jpg 900w
-        " sizes="(min-width:1200px) 270px,(min-width:768px)
-        354px,(min-width:480px) 450px"
-        <img
-          class="apple__big"
-          src="./images/offerings/apple-396w.png"
-          alt="big apple"
-          width="396px"
-          height="502px"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/offerings/apple-201w.png 1x,
+              ./images/offerings/apple-403w.png 2x
+            "
+            media="(max-width: 767.98px)"
+            sizes="(min-width: 320px) 201px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/offerings/apple-257w.png 1x,
+              ./images/offerings/apple-514w.png 2x
+            "
+            media="(max-width: 1279px)"
+            sizes="(min-width: 768px) 257px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/offerings/apple-396w.png 1x,
+              ./images/offerings/apple-792w.png 2x
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 396px, 100vw"
+          />
+          <img
+            class="apple__big"
+            src="./images/offerings/apple-396w.png"
+            alt="big apple"
+            width="396px"
+            height="502px"
+          />
+        </picture>
       </li>
       <li class="apple__item">
         <img
