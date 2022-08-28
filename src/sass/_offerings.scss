@@ -54,8 +54,21 @@
     }
   }
 }
+
 .offerings__container {
   @extend %container;
+}
+
+.container__desktop {
+}
+
+.container__desktop--right {
+  @media screen and(min-width:1280px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 573px;
+    margin-left: auto;
+  }
 }
 
 .apple__big {
@@ -67,6 +80,13 @@
   @media screen and(min-width:768px) {
     width: 257px;
     height: 325px;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: block;
+    width: 396px;
+    height: 502px;
+    margin: 0;
   }
 }
 
