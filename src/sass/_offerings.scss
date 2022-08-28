@@ -56,6 +56,7 @@
 }
 .offerings__container {
   @extend %container;
+  display: flex;
 }
 
 .apple__big {
@@ -146,12 +147,17 @@
   @media screen and(min-width:768px) {
     display: flex;
     gap: 116px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and(min-width:1280px) {
+    margin-bottom: 32px;
+    gap: 67px;
   }
 }
 
 .offerings__box {
   @media screen and(min-width:768px) {
-    width: 252px;
   }
 }
 
@@ -192,7 +198,7 @@
 
   color: #2c2c2c;
 
-  @media screen and(min-width:320px) {
+  @media screen and(min-width:320px) and(max-width:767px) {
     margin-bottom: 28px;
 
     font-size: 14px;
@@ -200,12 +206,12 @@
   }
 
   @media screen and(min-width:768px) {
-    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    width: 253px;
   }
 
   @media screen and(min-width:1280px) {
-    margin-bottom: 32px;
-
     font-size: 14px;
     line-height: calc(21 / 14);
   }
