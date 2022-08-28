@@ -1,0 +1,103 @@
+.offerings {
+  @extend %section;
+}
+
+.offerings__overlay {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and(max-width:320px) {
+    width: 100%;
+    height: 1050px;
+    background-image: url(../images/offerings/mobile-320@1x.svg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/mobile-320@2x.svg);
+    }
+  }
+
+  @media screen and(min-width:321px) and(max-width:480px) {
+    width: 100%;
+    height: 1050px;
+    background-image: url(../images/offerings/mobile-480@1x.svg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/mobile-480@2x.svg);
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+    height: 1140px;
+    background-image: url(../images/offerings/tablet@1x.svg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/tablet@2x.svg);
+    }
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 1280px;
+    height: 856px;
+    background-image: url(../images/offerings/desktop@1x.svg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/desktop@2x.svg);
+    }
+  }
+}
+.offerings__container {
+  @extend %container;
+}
+
+.apple__big {
+  @media screen and(max-width:480px) {
+    width: 201px;
+    height: 255px;
+  }
+
+  @media screen and(min-width:768px) {
+    width: 257px;
+    height: 325px;
+  }
+}
+
+.apple__medium {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: none;
+  }
+}
+
+.apple__small {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+
+  @media screen and(min-width:1280px) {
+    display: none;
+  }
+}
+
+.offerings__titel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  color: #2c2c2c;
+
+  @media screen and(min-width:320px) {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+}
