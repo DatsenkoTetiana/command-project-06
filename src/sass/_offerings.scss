@@ -141,6 +141,12 @@
   }
 }
 
+.offerings__wrap {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
+
 .offerings__box {
   @media screen and(min-width:768px) {
     width: 252px;
