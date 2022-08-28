@@ -1,5 +1,8 @@
 .customers {
   @extend %container;
+}
+
+.container__customers {
   @extend %section;
 }
 
