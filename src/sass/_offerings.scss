@@ -164,3 +164,52 @@
     line-height: calc(25 / 18);
   }
 }
+
+.offerings__box--text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+
+  color: #2c2c2c;
+
+  @media screen and(min-width:320px) {
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and(min-width:1280px) {
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+}
+
+.offerings__btn {
+  width: 106px;
+  height: 40px;
+  padding: 10px 22px;
+
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+
+  color: #2c2c2c;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #597d00;
+  }
+}
