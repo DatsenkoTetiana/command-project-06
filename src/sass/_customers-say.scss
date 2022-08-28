@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and(max-width:320px) {
+  @media screen and(min-width:320px) {
     width: 100%;
     height: 769px;
     background-image: url(../images/customers-say/Rectangle\ 701@1x.svg);
@@ -22,7 +22,7 @@
     }
   }
 
-  @media screen and(min-width:321px) and(max-width:480px) {
+  @media screen and(min-width:480px) {
     width: 100%;
     height: 769px;
     background-image: url(../images/customers-say/Rectangle\ 720@1x.svg);
