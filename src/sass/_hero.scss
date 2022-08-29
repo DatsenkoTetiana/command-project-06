@@ -105,18 +105,15 @@
 
 
 .hero-img {
-    display: none;
+        max-width: 292px;
+        height: 292px;
+        width: 100%;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        border: 14px solid var(--accent-br-color);
-        border-radius: 50%;
+        @media screen and (min-width: 1280px) {
+            max-width: 528px;
+            height: 528px;
+        }
     }
-
-    @media screen and (min-width: 1280px) {
-        border: 26px solid var(--accent-br-color);
-    }
-}
 
 
 .slider {
@@ -140,19 +137,28 @@
     max-width: 320px;
     max-height: 320px;
 
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+
     @media screen and (min-width: 1280px) {
         max-width: 580px;
         max-height: 580px;
+
+        border: 26px solid #ffe550;
+            border-radius: 50%;
     }
 }
 
 .slider__btn {
+     color: var(--main-txt-color);
     position: absolute;
     background-color: #ffffff;
     border-color: transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     cursor: pointer;
+    width: 34px;
+    
 
     &:hover,
     &:focus {
@@ -161,43 +167,15 @@
 
     &:active {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    }
-}
-
-.slider__btn-next,
-.slider__btn-prev {
-    color: var(--main-txt-color);
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    cursor: pointer;
-
-    @media screen and (min-width: 768px) {
-        width: 34px;
-        height: 28px;
-    }
-
-    @media screen and (min-width: 1280px) {
+    } 
+        @media screen and (min-width: 1280px) {
         width: 48px;
         height: 40px;
-    }
+        border-radius: 8px;
+        }
 }
 
-
-.slider__btn-next:after,
-.slider__btn-prev:after {
-    @media screen and (min-width: 768px) {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    @media screen and (min-width: 1280px) {
-        font-size: 28px;
-        text-align: center;
-    }
-}
-
-.slider__btn-prev {
+.swiper-button-prev {
     top: 50%;
     left: -8px;
 
@@ -206,25 +184,11 @@
     }
 }
 
-.slider__btn-next {
+.swiper-button-next {
     top: 50%;
     right: -8px;
 
     @media screen and (min-width: 1280px) {
         right: -14px;
-    }
-}
-
-.slider__icon {
-    fill: rgba(44, 44, 44, 1);
-    height: 100%;
-
-    &:hover,
-    &:focus {
-        fill: #7EB101;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 100%;
     }
 }
