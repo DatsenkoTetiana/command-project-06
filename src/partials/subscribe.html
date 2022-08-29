@@ -1,17 +1,63 @@
 <section class="subscribe">
-  <img
-    srcset="
-      ./images/subscribe/banan-1-546.png   546w,
-      ./images/subscribe/banan-1-1092.png 1092w,
-      ./images/subscribe/banan-2-281.png   281w,
-      ./images/subscribe/banan-2-562.png   562w,
-      ./images/subscribe/banan-3-161.png   161w,
-      ./images/subscribe/banan-3-322.png   322w
-    "
-    src="./images/subscribe/banan-1-1092.png"
-    sizes="(min-width: 1280px) 546px, (min-width: 768px) 281px, 100vw"
-    alt="A picture of a banana"
-    width="546"
-  />
-  <h1>Subscribe To Get Special Offers</h1>
+  <div class="subscribe__container">
+    <div class="subscribe__img">
+      <picture>
+        <source
+          srcset="
+            ./images/subscribe/banan-3-161.png 1x,
+            ./images/subscribe/banan-3-322.png 2x
+          "
+          media="(max-width: 767px)"
+          sizes="(min-width: 320px) 161px, 100vw"
+        />
+
+        <source
+          srcset="
+            ./images/subscribe/banan-2-281.png 1x,
+            ./images/subscribe/banan-2-562.png 2x
+          "
+          media="(max-width: 1279px)"
+          sizes="(min-width: 768px) 281px, 100vw"
+        />
+
+        <source
+          srcset="
+            ./images/subscribe/banan-1-546.png  1x,
+            ./images/subscribe/banan-1-1092.png 2x
+          "
+          media="(max-width: 1280px)"
+          sizes="(min-width: 1280px) 546px, 100vw"
+        />
+
+        <img
+          src="./images/subscribe/banan-1-546.png"
+          alt="a picture of a banana"
+        />
+      </picture>
+    </div>
+    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe__desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
+    <form class="subscribe-form">
+      <input
+        class="subscribe-form__input"
+        type="email"
+        name="E-mail"
+        required
+        placeholder="Enter your email"
+      />
+      <svg class="subscribe-form-icon" width="12" height="12">
+        <use class="warning-icon" href="./images/icons.svg#input"></use>
+      </svg>
+      <span class="subscribe-form-error"
+        >Not a valid email address (example@email.com)</span
+      >
+
+      <button class="subscribe-button" type="submit">
+        <span class="subscribe-button__text">Subscribe</span>
+      </button>
+    </form>
+  </div>
 </section>
