@@ -15,9 +15,10 @@
 
   @media screen and(min-width: 320px) {
     background-size: 55px, 79px, 80px, 72px, 105px, 104px, 60px, 91px;
-    background-position: left top 137px, bottom left 43px, bottom right 24px, bottom left 71px, bottom right 89px, top right, top 25px right, left top 111px;
-    background-image:
-      url(../images/footer/footer-mobile/m100.png),
+    background-position: left top 137px, bottom left 43px, bottom right 24px,
+      bottom left 71px, bottom right 89px, top right, top 25px right,
+      left top 111px;
+    background-image: url(../images/footer/footer-mobile/m100.png),
       url(../images/footer/footer-mobile/m79.png),
       url(../images/footer/footer-mobile/m80.png),
       url(../images/footer/footer-mobile/m72.png),
@@ -29,8 +30,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image:
-        url(../images/footer/footer-mobile/m200.png),
+      background-image: url(../images/footer/footer-mobile/m200.png),
         url(../images/footer/footer-mobile/m158.png),
         url(../images/footer/footer-mobile/m160.png),
         url(../images/footer/footer-mobile/m76.png),
@@ -42,9 +42,10 @@
 
   @media screen and(min-width: 768px) {
     background-size: 168px, 171px, 203px, 96px, 170px, 153px, 221px, 184px;
-    background-position: bottom left 136px, bottom right 94px, top right, bottom 141px right, bottom right, left 197px bottom, right 223px bottom, left bottom;
-    background-image:
-      url(../images/footer/footer-tablet/t168.png),
+    background-position: bottom left 136px, bottom right 94px, top right,
+      bottom 141px right, bottom right, left 197px bottom, right 223px bottom,
+      left bottom;
+    background-image: url(../images/footer/footer-tablet/t168.png),
       url(../images/footer/footer-tablet/t171.png),
       url(../images/footer/footer-tablet/t365.png),
       url(../images/footer/footer-tablet/t289.png),
@@ -56,8 +57,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image:
-        url(../images/footer/footer-tablet/t336.png),
+      background-image: url(../images/footer/footer-tablet/t336.png),
         url(../images/footer/footer-tablet/t342.png),
         url(../images/footer/footer-tablet/t730.png),
         url(../images/footer/footer-tablet/t578.png),
@@ -69,31 +69,25 @@
   }
 
   @media screen and(min-width: 1280px) {
-    background-position: top 129px left 324px, bottom left 216px, bottom right 134px, bottom left 53px, bottom right 16px, bottom left 281px, bottom center, bottom right 282px;
+    background-position: top 129px left 324px, bottom left 216px,
+      bottom right 134px, bottom left 53px, bottom right 16px, bottom left 281px,
+      bottom center, bottom right 282px;
     background-size: 526px, 178px, 182px, 196px, 181px, 163px, 380px, 235px;
     width: 100%;
 
-    background-image:
-      url(../images/footer/des526.png),
-      url(../images/footer/des178.png),
-      url(../images/footer/des182.png),
-      url(../images/footer/des196.png),
-      url(../images/footer/des181.png),
-      url(../images/footer/des163.png),
-      url(../images/footer/des380.png),
+    background-image: url(../images/footer/des526.png),
+      url(../images/footer/des178.png), url(../images/footer/des182.png),
+      url(../images/footer/des196.png), url(../images/footer/des181.png),
+      url(../images/footer/des163.png), url(../images/footer/des380.png),
       url(../images/footer/des235.png);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image:
-        url(../images/footer/des1052.png),
-        url(../images/footer/des356.png),
-        url(../images/footer/des364.png),
-        url(../images/footer/des392.png),
-        url(../images/footer/des362.png),
-        url(../images/footer/des326.png),
-        url(../images/footer/des760.png),
+      background-image: url(../images/footer/des1052.png),
+        url(../images/footer/des356.png), url(../images/footer/des364.png),
+        url(../images/footer/des392.png), url(../images/footer/des362.png),
+        url(../images/footer/des326.png), url(../images/footer/des760.png),
         url(../images/footer/des470.png);
     }
   }
@@ -188,20 +182,15 @@
   }
 }
 
-.form__label {
-  display: block;
+//   @media screen and(min-width:768px) {
+//     margin-right: 13px;
+//     margin-bottom: 12px;
+//   }
+// }
 
-  @media screen and(max-width:480px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and(min-width:768px) {
-    margin-right: 13px;
-    margin-bottom: 12px;
-  }
-}
 
 .form__input {
+  display: block;
   width: 100%;
   height: 42px;
   padding-top: 12px;
@@ -211,9 +200,31 @@
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   outline: transparent;
+  margin-bottom: 20px;
+
+  &:focus {
+    color: #2c2c2c;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: #7eb101;
+  }
+
+  &:invalid:required:not(:placeholder-shown) {
+    border-color: #ff705d;
+  }
+
+  &:invalid:not(:placeholder-shown)~.subscribe-form-error {
+    display: block;
+  }
+
+  &:invalid:required:not(:placeholder-shown)+.subscribe-form-icon {
+    opacity: 1;
+  }
 
   @media screen and(min-width:768px) {
     width: 395px;
+    margin-right: 13px;
   }
 
   @media screen and(min-width:1280px) {
@@ -222,14 +233,11 @@
 }
 
 .form__input ::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--main-font);
   font-size: 12px;
   line-height: calc(18 / 12);
   color: #505050;
 }
-
 
 .footer__button {
   display: block;
@@ -271,6 +279,7 @@
   color: #2c2c2c;
 
   @media screen and(max-width:480px) {
+    margin-top: -65px;
     margin-bottom: 60px;
     font-size: 10px;
     line-height: calc(12 / 10);
