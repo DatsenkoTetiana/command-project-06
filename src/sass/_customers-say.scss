@@ -1,6 +1,3 @@
-.customers {
-}
-
 .container__customers {
   @extend %section;
   @extend %container;
@@ -18,9 +15,10 @@
     width: 100%;
     height: 769px;
     background-image: url(../images/customers-say/Rectangle\ 701@1x.svg);
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 701@2x.svg);
     }
   }
@@ -29,9 +27,10 @@
     width: 100%;
     height: 769px;
     background-image: url(../images/customers-say/Rectangle\ 720@1x.svg);
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 720@2x.svg);
     }
   }
@@ -40,9 +39,10 @@
     width: 768px;
     height: 554px;
     background-image: url(../images/customers-say/Rectangle\ 719@1x.svg);
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 719@2x.svg);
     }
   }
@@ -51,9 +51,10 @@
     width: 1280px;
     height: 647px;
     background-image: url(../images/customers-say/Rectangle\ 706@1x.svg);
+
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 706@2x.svg);
     }
   }
