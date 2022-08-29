@@ -1,15 +1,108 @@
 .offerings {
   @extend %section;
+
+  @media screen and(min-width:320px) and(max-width:768px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and(min-width:480px) {
+    padding-top: 40px;
+  }
+
+  @media screen and(min-width:768px) {
+    margin-top: -164px;
+    padding-top: 150px;
+
+  }
 }
 
-.container {
+.offerings__container {
   @extend %container;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and(min-width:1280px) {
+    padding-top: 50px;
+
+  }
 }
+
+.container__desktop {
+  @media screen and(min-width:1280px) {
+    display: flex;
+  }
+}
+
+.offerings__desktop {
+  padding: 0;
+
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-bottom: auto;
+  }
+
+
+}
+
+.apple__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and(min-width:320px) and(max-width:480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  @media screen and(max-width:768px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width:480px) and (min-width:768px) {
+    display: flex;
+
+  }
+
+
+  @media screen and(min-width:1280px) {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 90px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+    margin-left: 30px;
+
+  }
+}
+
+.apple__item:nth-child(1) {
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-right: 75px;
+  }
+}
+
+.apple__item:nth-child(2) {
+  @media screen and(min-width:768px) and(max-width:1279px) {
+    margin-right: 44px;
+  }
+}
+
+// .apple__item {
+//   @media screen and(min-width:320px) and(max-width:480px) {
+//     margin-bottom: 30px;
+//   }
+// }
 
 .offerings__bg {
   width: 502px;
@@ -34,7 +127,6 @@
 .offerings__text {
   font-family: var(--main-font);
   font-size: 16px;
-  line-height: 2.5;
   color: var(--main-txt-color);
 }
 
@@ -61,70 +153,111 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and(max-width:320px) {
+  @media screen and(min-width:320px) and(max-width:480px) {
     width: 100%;
     height: 1050px;
-    background-image: url(../images/offerings/mobile-320@1x.svg);
+    background-size: 128px, 280px, 256px, cover;
+    background-position: top 268px center, top 70px center, top 80px center, center;
+    background-image: url(../images/offerings/ellips/blur-304.svg),
+      url(../images/offerings/ellips/ellips-357.svg),
+      url(../images/offerings/ellips/ellips-502.svg),
+      url(../images/offerings/mobile-320@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/mobile-320@2x.svg);
+      background-image: url(../images/offerings/ellips/blur-608.svg),
+        url(../images/offerings/ellips/ellips-714.svg),
+        url(../images/offerings/ellips/elips-1004.svg),
+        url(../images/offerings/mobile-320@2x.svg);
     }
   }
 
-  @media screen and(min-width:321px) and(max-width:480px) {
-    width: 100%;
+  @media screen and(min-width:480px) {
+    width: 480px;
     height: 1050px;
-    background-image: url(../images/offerings/mobile-480@1x.svg);
+    background-size: 128px, 280px, 256px, cover;
+    background-position: top 268px center, top 70px center, top 80px center, center;
+    background-image: url(../images/offerings/ellips/blur-304.svg),
+      url(../images/offerings/ellips/ellips-357.svg),
+      url(../images/offerings/ellips/ellips-502.svg),
+      url(../images/offerings/mobile-480@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/mobile-480@2x.svg);
+      background-image:
+        url(../images/offerings/ellips/blur-608.svg),
+        url(../images/offerings/ellips/ellips-714.svg),
+        url(../images/offerings/ellips/elips-1004.svg),
+        url(../images/offerings/mobile-480@2x.svg);
     }
   }
 
   @media screen and(min-width:768px) {
     width: 768px;
     height: 1140px;
-    background-image: url(../images/offerings/tablet@1x.svg);
+    background-position: right 170px top 420px, left 77px top 405px, left 32px top 187px, left 48px top 202px, center;
+    background-size: 200px, 304px, 357px, 326px, cover;
+    background-image: url(../images/offerings/ellips/blur-304.svg),
+      url(../images/offerings/ellips/blur-304.svg),
+      url(../images/offerings/ellips/ellips-357.svg),
+      url(../images/offerings/ellips/ellips-502.svg),
+      url(../images/offerings/tablet@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/tablet@2x.svg);
+      background-image: url(../images/offerings/ellips/blur-608.svg),
+        url(../images/offerings/ellips/blur-608.svg),
+        url(../images/offerings/ellips/ellips-714.svg),
+        url(../images/offerings/ellips/elips-1004.svg),
+        url(../images/offerings/tablet@2x.svg);
     }
   }
 
   @media screen and(min-width:1280px) {
     width: 1280px;
     height: 856px;
-    background-image: url(../images/offerings/desktop@1x.svg);
+    background-size: 252px, 550px, 502px, cover;
+    background-position: bottom 109px left 191px, bottom 43px left 40px, bottom 67px left 60px, center;
+    background-image: url(../images/offerings/ellips/blur-304.svg),
+      url(../images/offerings/ellips/ellips-357.svg),
+      url(../images/offerings/ellips/ellips-502.svg),
+      url(../images/offerings/desktop@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/desktop@2x.svg);
+      background-image:
+        url(../images/offerings/ellips/blur-608.svg),
+        url(../images/offerings/ellips/ellips-714.svg),
+        url(../images/offerings/ellips/elips-1004.svg),
+        url(../images/offerings/desktop@2x.svg);
     }
   }
 }
 
-.offerings__container {
-  @extend %container;
-}
-
 
 .container__desktop--right {
+  @media screen and(min-width:768px) and (max-width:1279px) {
+    margin-bottom: auto;
+  }
+
   @media screen and(min-width:1280px) {
     display: flex;
     flex-wrap: wrap;
     width: 573px;
     margin-left: auto;
+    margin-top: 50px;
   }
 }
 
 .apple__big {
+  @media screen and(min-width:320px) {
+    display: block;
+  }
+
   @media screen and(max-width:480px) {
     width: 201px;
     height: 255px;
@@ -315,7 +448,8 @@
 
 .container__link {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
 }
 
 .offerings__link {
