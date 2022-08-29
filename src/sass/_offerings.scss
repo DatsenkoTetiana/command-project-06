@@ -1,54 +1,54 @@
 .offerings {
-    @extend %section;
+  @extend %section;
 }
 
 .container {
-    @extend %container;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  @extend %container;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .offerings__bg {
-    width: 502px;
-    height: 502px;
-    background: #fff;
+  width: 502px;
+  height: 502px;
+  background: #fff;
 }
 
 .offerings__img {
-    display: block;
+  display: block;
 }
 
 // all text
 .offerings__title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-family: var(--main-font);
-    font-size: 42px;
-    line-height: 0.47;
-    color: var(--main-txt-color);
+  font-family: var(--main-font);
+  font-size: 42px;
+  line-height: 0.47;
+  color: var(--main-txt-color);
 }
 
 .offerings__text {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 2.5;
-    color: var(--main-txt-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 2.5;
+  color: var(--main-txt-color);
 }
 
 .offerings__name {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .offerings__btn {
-    display: inline-block;
-    padding: 10px 22px;
-    margin-bottom: 100px;
+  display: inline-block;
+  padding: 10px 22px;
+  margin-bottom: 100px;
 
-    background: #FFFFFF;
+  background: #FFFFFF;
 
-    border: 2px solid #7EB101;
-    border-radius: 30px
+  border: 2px solid #7EB101;
+  border-radius: 30px
 }
