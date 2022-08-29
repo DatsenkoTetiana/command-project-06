@@ -1,29 +1,29 @@
 .subscribe {
   @extend %section;
-  padding-top: 0;
+
 
   &__container {
     @extend %container;
     position: relative;
-    width: 100%;
+
   }
 
   &__img {
+    position: absolute;
     width: 161px;
-    margin-right: auto;
-    margin-left: auto;
+    top: -20px;
 
     @media screen and(min-width: 768px) {
       width: 281px;
-       margin-left: auto;
+      margin-left: auto;
       margin-right: 0;
-      }
+    }
 
-             @media screen and(min-width: 1280px) {
-               width: 546px;
-              
-             }
+    @media screen and(min-width: 1280px) {
+      width: 546px;
+    }
   }
+
   &__title {
     font-family: var(--main-font);
     font-size: 28px;
@@ -38,11 +38,11 @@
       margin-top: 20px;
     }
 
-        @media screen and(min-width: 1280px) {
-          font-size: 42px;
-          line-height: calc(50 / 42);
-          margin-top: 0px;
-        }
+    @media screen and(min-width: 1280px) {
+      font-size: 42px;
+      line-height: calc(50 / 42);
+      margin-top: 0px;
+    }
   }
 
   &__desc {
@@ -60,12 +60,33 @@
   }
 }
 
+.subscribe-form-icon {
+  opacity: 0;
+  position: absolute;
+  top: 46px;
+  fill: #ff705d;
+}
+
+.subscribe-form-error {
+  position: absolute;
+
+  top: 46px;
+  left: 16px;
+  display: none;
+
+  font-family: var(--main-font);
+  font-size: 10px;
+  line-height: calc(15 / 10);
+  color: #ff705d;
+}
+
 .subscribe-form {
+  position: relative;
 
   @media screen and (min-width: 768px) {
-      display: flex;
-    }
-  
+    display: flex;
+  }
+
   &__input {
     display: block;
     width: 100%;
@@ -83,7 +104,6 @@
     font-size: 12px;
     line-height: calc(18 / 12);
     color: #505050;
-    
 
     &:focus {
       color: #2c2c2c;
@@ -97,15 +117,18 @@
       border-color: #ff705d;
     }
 
-         @media screen and (min-width: 768px) {
-            width: 394px; 
-            margin-bottom: 0;
-                      
-         }
-  }
+    &:invalid:not(:placeholder-shown)~.subscribe-form-error {
+      display: block;
+    }
 
-  &__icon {
-    display: none;
+    &:invalid:required:not(:placeholder-shown)+.subscribe-form-icon {
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 394px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -126,8 +149,9 @@
   border-radius: 30px;
 
   @media screen and (min-width: 768px) {
-      display: flex;
-    }margin-left: 22px;
+    display: flex;
+    margin-left: 22px;
+  }
 
   &:hover,
   :focus {
