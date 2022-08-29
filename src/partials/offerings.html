@@ -1,43 +1,126 @@
-<section class="offerings">
-    <div class="container">
-        <!-- <svg class="offerings__ellips">
-            <use href="/src/images/icons.svg#ellips"></use>
-        </svg>
-        <svg class="offerings__blur">
-            <use href="/src/images/icons.svg#blur"></use>
-        </svg>
-        <svg class="offerings__bg">
-            <use href="/src/images/icons.svg#bg"></use>
-        </svg> -->
-        <img class="offerings__img" src="/src/images/offerings/apple-396.png" alt="apple" width="396" height="500">
-
-        <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+<section class="offerings offerings__overlay">
+  <div class="offerings__container">
+    <div class="container__desktop">
+      <ul class="apple__list">
+        <li class="apple__item">
+          <picture>
+            <source
+              srcset="
+                ./images/offerings/apple-mobile-201w.png 1x,
+                ./images/offerings/apple-mobile-403w.png 2x
+              "
+              media="(max-width:320px)"
+              sizes="(min-width:480px) 201px, 403px"
+            />
+            <source
+              srcset="
+                ./images/offerings/apple-tablet-1-257w.png 1x,
+                ./images/offerings/apple-tablet-1-514w.png 2x
+              "
+              media="(max-width:1279px)"
+              sizes="(min-width:768px) 257px, 514px"
+            />
+            <source
+              srcset="
+                ./images/offerings/apple-396w.png 1x,
+                ./images/offerings/apple-792w.png 2x
+              "
+              media="(min-width:1280px)"
+              sizes="(min-width:1280px) 396px, 100vw"
+            />
+            <img
+              class="apple__big"
+              src="./images/offerings/apple-396w.png"
+              alt="big apple"
+              width="396px"
+              height="502px"
+            />
+          </picture>
+        </li>
+        <li class="apple__item">
+          <picture>
+            <source
+              srcset="
+                ./images/offerings/apple-tablet-2-166w.png 1x,
+                ./images/offerings/apple-tablet-2-332w.png 2x
+              "
+              media="(max-width:1279px)"
+              sizes="(min-width:768px) 166px, 332px"
+            />
+            <img
+              class="apple__medium"
+              src="./images/offerings/apple-tablet-2-166w.png"
+              alt="medium apple"
+              width="166px"
+              height="210px"
+            />
+          </picture>
+        </li>
+        <li class="apple__item">
+          <picture>
+            <source
+              srcset="
+                ./images/offerings/apple-tablet-3-108w.png 1x,
+                ./images/offerings/apple-tablet-3-216w.png 2x
+              "
+              media="(max-width:1279px)"
+              sizes="(min-width:768px) 108px, 216px"
+            />
+            <img
+              class="apple__small"
+              src="./images/offerings/apple-tablet-3-108w.png"
+              alt="small apple"
+              width="108px"
+              height="136px"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="container__desktop--right">
+        <h2 class="offerings__titel">
+          What&#10076;s Special About Our Offerings
+        </h2>
         <p class="offerings__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique.
-            Duis
-            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
         </p>
-        <ul class="offerings__list">
-            <li class="offerings__item">
-                <svg class="offerings__icon" width="48" height="48">
-                    <use href="/src/images/icons.svg#rocket"></use>
-                </svg>
-                <h3 class="offerings__name">Fasest Delivery</h3>
-                <p class="offerings__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                    enim
-                    in eros.</p>
-            </li>
-            <li class="offerings__item">
-                <svg class="offerings__icon" width="48" height="48">
-                    <use href="/src/images/icons.svg#touch-app"></use>
-                </svg>
-                <h3 class="offerings__name">Easy To Order</h3>
-                <p class="offerings__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
-                    enim
-                    in eros.</p>
-            </li>
-        </ul>
-        <button class="offerings__btn">Order Now</button>
+        <div class="offerings__wrap">
+          <div class="offerings__box">
+            <div class="bax__icon">
+              <svg class="offerings__box--icon" width="32" height="32">
+                <use href="/src/images/icons.svg#rocket"></use>
+              </svg>
+            </div>
+            <h3 class="offerings__box--titel">Fasest Delivery</h3>
+            <p class="offerings__box--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </div>
+          <div class="offerings__box">
+            <div class="bax__icon">
+              <svg class="offerings__box--icon" width="32" height="32">
+                <use href="/src/images/icons.svg#touch-app"></use>
+              </svg>
+            </div>
+            <h3 class="offerings__box--titel">Easy To Order</h3>
+            <p class="offerings__box--text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </div>
+        </div>
+        <div class="container__link">
+          <button class="offerings__btn" type="button">OrderNow</button>
+          <a class="offerings__link" href=""
+            >Read More
+            <svg class="offerings__link--icon" width="14" height="14">
+              <use href="/src/images/icons.svg#chevron-down"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
