@@ -28,8 +28,8 @@
       url(../images/footer/footer-mobile/m91.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-mobile/m200.png),
         url(../images/footer/footer-mobile/m158.png),
         url(../images/footer/footer-mobile/m160.png),
@@ -55,8 +55,8 @@
       url(../images/footer/footer-tablet/t184.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-tablet/t336.png),
         url(../images/footer/footer-tablet/t342.png),
         url(../images/footer/footer-tablet/t730.png),
@@ -82,8 +82,8 @@
       url(../images/footer/des235.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/des1052.png),
         url(../images/footer/des356.png), url(../images/footer/des364.png),
         url(../images/footer/des392.png), url(../images/footer/des362.png),
@@ -182,8 +182,11 @@
   }
 }
 
-.form__label {
-  display: block;
+//   @media screen and(min-width:768px) {
+//     margin-right: 13px;
+//     margin-bottom: 12px;
+//   }
+// }
 
   @media screen and(max-width:480px) {
     margin-bottom: 20px;
@@ -217,6 +220,7 @@
 }
 
 .form__input {
+  display: block;
   position: relative;
   width: 100%;
   height: 42px;
@@ -227,6 +231,27 @@
   border: 0.854167px solid #ffe550;
   border-radius: 30px;
   outline: transparent;
+  margin-bottom: 20px;
+
+  &:focus {
+    color: #2c2c2c;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border-color: #7eb101;
+  }
+
+  &:invalid:required:not(:placeholder-shown) {
+    border-color: #ff705d;
+  }
+
+  &:invalid:not(:placeholder-shown)~.subscribe-form-error {
+    display: block;
+  }
+
+  &:invalid:required:not(:placeholder-shown)+.subscribe-form-icon {
+    opacity: 1;
+  }
 
   &:valid:not(:placeholder-shown) {
     border-color: #7eb101;
@@ -246,6 +271,7 @@
 
   @media screen and(min-width:768px) {
     width: 395px;
+    margin-right: 13px;
   }
 
   @media screen and(min-width:1280px) {
@@ -254,9 +280,7 @@
 }
 
 .form__input ::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--main-font);
   font-size: 12px;
   line-height: calc(18 / 12);
   color: #505050;
@@ -302,6 +326,7 @@
   color: #2c2c2c;
 
   @media screen and(max-width:480px) {
+    margin-top: -65px;
     margin-bottom: 60px;
     font-size: 10px;
     line-height: calc(12 / 10);

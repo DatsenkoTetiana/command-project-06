@@ -29,6 +29,22 @@
         <h2 class="footer__titel">Subscribe</h2>
         <form class="footer__form">
           <div class="form__wrap">
+
+            <input
+              class="form__input"
+              name="E-mail"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <svg class="subscribe-form-icon" width="12" height="12">
+              <use class="warning-icon" href="./images/icons.svg#input"></use>
+            </svg>
+            <span class="subscribe-form-error"
+              >Not a valid email address (example@email.com)</span
+            >
+
             <label class="form__label">
               <input
                 class="form__input"
@@ -47,6 +63,7 @@
                 >Not a valid email address (example@email.com)</span
               >
             </label>
+
 
             <button class="footer__button" type="submit">Subscribe</button>
           </div>
