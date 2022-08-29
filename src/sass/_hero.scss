@@ -1,5 +1,5 @@
 .hero {
-    @extend %section;
+    padding: 60px 0;
 
     @media screen and (min-width: 1280px) {
         margin-top: 0;
@@ -123,19 +123,26 @@
     display: none;
 
     @media screen and (min-width: 768px) {
+        display: block;
         position: absolute;
-        bottom: 0;
+        top: 89px;
         right: 32px;
-        display: flex;
-        width: 320px;
-        height: 320px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: 14px;
-        right: 16px;
-        width: 580px;
-        height: 580px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+.swiper {
+    max-width: 320px;
+    max-height: 320px;
+
+    @media screen and (min-width: 1280px) {
+        max-width: 580px;
+        max-height: 580px;
     }
 }
 
@@ -146,24 +153,14 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     cursor: pointer;
-}
 
-.slider__btn-prev {
-    top: 50%;
-    left: 0;
-}
+    &:hover,
+    &:focus {
+        color: #7eb101;
+    }
 
-.slider__btn-next {
-    top: 50%;
-    right: 0;
-}
-
-.slider__icon {
-    fill: var(--main-color-text);
-
-    @media screen and (min-width: 1280px) {
-        width: 29px;
-        height: 16.5px;
+    &:active {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
     }
 }
 
@@ -186,13 +183,6 @@
     }
 }
 
-.slider__btn-next,
-.slider__btn-prev:hover,
-.slider__btn-next,
-.slider__btn-prev:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-    color: #7EB101;
-}
 
 .slider__btn-next:after,
 .slider__btn-prev:after {
@@ -204,5 +194,37 @@
     @media screen and (min-width: 1280px) {
         font-size: 28px;
         text-align: center;
+    }
+}
+
+.slider__btn-prev {
+    top: 50%;
+    left: -8px;
+
+    @media screen and (min-width: 1280px) {
+        left: -14px;
+    }
+}
+
+.slider__btn-next {
+    top: 50%;
+    right: -8px;
+
+    @media screen and (min-width: 1280px) {
+        right: -14px;
+    }
+}
+
+.slider__icon {
+    fill: rgba(44, 44, 44, 1);
+    height: 100%;
+
+    &:hover,
+    &:focus {
+        fill: #7EB101;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 100%;
     }
 }
