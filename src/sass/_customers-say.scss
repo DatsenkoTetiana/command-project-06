@@ -1,6 +1,11 @@
-.container__customers {
+.customers {
   @extend %section;
+}
+
+.container__customers {
   @extend %container;
+
+  outline: 1px solid tomato;
 }
 
 .customers__overlay {
@@ -17,8 +22,8 @@
     background-image: url(../images/customers-say/Rectangle\ 701@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 701@2x.svg);
     }
   }
@@ -29,8 +34,8 @@
     background-image: url(../images/customers-say/Rectangle\ 720@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 720@2x.svg);
     }
   }
@@ -41,8 +46,8 @@
     background-image: url(../images/customers-say/Rectangle\ 719@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 719@2x.svg);
     }
   }
@@ -53,15 +58,14 @@
     background-image: url(../images/customers-say/Rectangle\ 706@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 706@2x.svg);
     }
   }
 }
 
 .customers__titel {
-  padding-top: 60px;
   margin-bottom: 20px;
 
   font-family: var(--main-font);
@@ -75,7 +79,6 @@
   }
 
   @media screen and(min-width:1280px) {
-    padding-top: 100px;
   }
 }
 
