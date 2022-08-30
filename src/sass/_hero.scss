@@ -12,7 +12,7 @@
                 }
 }
 
-.hero-container {
+.hero__container {
     @extend %container;
 
     @media screen and (min-width: 768px) {
@@ -26,7 +26,7 @@
     }
 }
 
-.hero-wrap {
+.hero__wrap {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@
     }
 }
 
-.hero__wrap-title {
+.hero__wrap--title {
         margin-bottom: 28px;
         font-weight: 700;
         color: var(--main-txt-color);
@@ -63,7 +63,7 @@
         }
     }
 
-.hero__wrap-text {
+.hero__wrap--text {
         margin-bottom: 28px;
 
         color: var(--main-txt-color);
@@ -106,7 +106,7 @@
     }
 }
 
-.hero-img {
+.hero__img {
         max-width: 292px;
         height: 292px;
         width: 100%;
@@ -120,6 +120,7 @@
 
 .slider {
     display: none;
+    z-index: 0;
 
     @media screen and (min-width: 768px) {
         display: block;
