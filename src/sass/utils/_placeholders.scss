@@ -9,15 +9,18 @@
 %container {
   margin: 0 auto;
   padding: 0 20px;
-  margin: 0;
+  // margin: 0;
 
   @media screen and (min-width: 320px) {
     width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media screen and (min-width: 480px) {
     width: 480px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media screen and (min-width: 768px) {
