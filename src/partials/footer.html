@@ -12,69 +12,64 @@
             <a class="footer__link footer__link--current" href="">Home</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="">About</a>
+            <a class="footer__link" href="#about">About</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="">Service</a>
+            <a class="footer__link" href="#service">Service</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="">Menu</a>
+            <a class="footer__link" href="#menu">Menu</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="">Contact</a>
+            <a class="footer__link" href="#contacts">Contact</a>
           </li>
         </ul>
       </div>
       <div class="right__wrap">
         <h2 class="footer__titel">Subscribe</h2>
         <form class="footer__form">
-          <div class="form__wrap">
-
-            <input class="form__input" name="E-mail" type="email" placeholder="Enter your email" required />
-
-            <svg class="subscribe-form-icon" width="12" height="12">
-              <use class="warning-icon" href="./images/icons.svg#input"></use>
+          <input
+            class="form__input"
+            name="user-email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="fotter__form--error">
+            <svg class="footer__form--icon" width="11" height="11">
+              <use
+                class="footer__warning--icon"
+                href="./images/icons.svg#input"
+              ></use>
             </svg>
-            <span class="subscribe-form-error">Not a valid email address (example@email.com)</span>
-            <!-- 
-            <label class="form__label">
-              <input
-                class="form__input"
-                name="user-email"
-                type="email"
-                placeholder="Enter your email"
-                required
-              />
-              <svg class="footer__form--icon" width="11" height="11">
-                <use
-                  class="footer__warning--icon"
-                  href="./images/icons.svg#input"
-                ></use>
-              </svg>
-              <span class="fotter__form--error"
-                >Not a valid email address (example@email.com)</span
-              >
-            </label> -->
-
-
-            <button class="footer__button" type="submit">Subscribe</button>
-          </div>
-          <a class="privacy__link" href="">By subscribing you agree to with our
-            <span class="privacy__color">Privacy Policy</span>
-          </a>
+            Not a valid email address (example@email.com)</span
+          >
+          <button class="footer__button" type="submit">Subscribe</button>
         </form>
+        <span class="privacy__link"
+          >By subscribing you agree to with our
+          <a class="privacy__color" href="//" target="_blank"
+            >Privacy Policy</a
+          ></span
+        >
       </div>
     </div>
     <div class="information__wrap">
       <ul class="information__list">
         <li class="information__item">
-          <a class="information__link" href="">Privacy Policy</a>
+          <a class="information__link" href="//" target="_blank"
+            >Privacy Policy</a
+          >
         </li>
         <li class="information__item">
-          <a class="information__link" href="">Terms of Service</a>
+          <a class="information__link" href="//" target="_blank"
+            >Terms of Service</a
+          >
         </li>
         <li class="information__item">
-          <a class="information__link" href="">Cookies Settings</a>
+          <a class="information__link" href="//" target="_blank"
+            >Cookies Settings</a
+          >
         </li>
       </ul>
       <p class="copyright__text">2022 FoodSta. All right reserved.</p>
