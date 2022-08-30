@@ -15,6 +15,7 @@
     line-height: calc(33 / 28);
     text-align: center;
     color: var(--main-txt-color);
+    animation: move 1500ms linear 100ms 1 both;
 
     @media screen and(min-width:768px) {
         font-size: 42px;
@@ -63,6 +64,7 @@
     padding: 20px 19px;
     border: 11px solid #ffe550;
     border-radius: 100%;
+    animation: fade-in 1500ms ease 100ms 1 alternate both;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         border: 14px solid #ffe550;
