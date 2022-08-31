@@ -303,11 +303,11 @@
   color: #2c2c2c;
   cursor: pointer;
 
-  transition: border-color var(--animation-hv-fcs);
+  transition: background-color var(--animation-hv-fcs);
 
   &:hover,
   &:focus {
-    border-color: #ffe550;
+    background-color: #ffe550;
   }
 
   @media screen and(max-width:480px) {
