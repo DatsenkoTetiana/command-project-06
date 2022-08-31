@@ -28,22 +28,22 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and(max-width:320px) {
+  @media screen and(min-width:320px) {
     background-image: url(../images/customers-say/Rectangle\ 701@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 701@2x.svg);
     }
   }
 
-  @media screen and(min-width:321px) and(max-width:480px) {
+  @media screen and(min-width:480px) {
     background-image: url(../images/customers-say/Rectangle\ 720@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 720@2x.svg);
     }
   }
@@ -52,18 +52,19 @@
     background-image: url(../images/customers-say/Rectangle\ 719@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 719@2x.svg);
     }
   }
 
   @media screen and(min-width:1280px) {
+    max-width: 1280px;
     background-image: url(../images/customers-say/Rectangle\ 706@1x.svg);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/customers-say/Rectangle\ 706@2x.svg);
     }
   }
@@ -82,8 +83,7 @@
     line-height: calc(49 / 42);
   }
 
-  @media screen and(min-width:1280px) {
-  }
+  @media screen and(min-width:1280px) {}
 }
 
 .customers__text {
@@ -115,8 +115,9 @@
   background-color: #ffffff;
 
   border-radius: 0px 30px 30px 30px;
+  animation: fade-in 1500ms ease 100ms 1 alternate both;
 
-  @media screen and(max-width:480px) {
+  @media screen and(max-width:768px) {
     padding: 8px;
     margin-bottom: 24px;
 

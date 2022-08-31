@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(94, 99, 99, 0.7);
+  transition: opacity var(--animation-hv-fcs), visibility var(--animation-hv-fcs);
 }
 
 .backdrop-order.is-hidden {
@@ -102,7 +103,7 @@
       border-color: #ff705d;
     }
 
-    &:invalid:not(:placeholder-shown) ~ .modal-form-error {
+    &:invalid:not(:placeholder-shown)~.modal-form-error {
       opacity: 1;
     }
 
