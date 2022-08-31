@@ -8,7 +8,7 @@
   transition: opacity var(--animation-hv-fcs), visibility var(--animation-hv-fcs);
 }
 
-.backdrop-order.is-hidden {
+.backdrop-order.backdrop--hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

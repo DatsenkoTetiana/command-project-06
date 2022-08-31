@@ -1,4 +1,4 @@
-<div class="backdrop-order is-hidden" data-modal>
+<div class="backdrop-order backdrop--hidden" data-modal>
   <div class="order-modal">
     <button class="order-modal__btn" type="button" data-modal-close>
       <svg class="order-modal__icon" width="11" height="11">
@@ -10,57 +10,34 @@
       <div class="order-form__group" role="group">
         <label class="order-form__wrap">
           <span class="order-form__label">Name</span>
-          <input
-            class="order-form__input"
-            type="text"
-            name="user-name"
-            required
-            placeholder="Your name"
-            minlength="3"
-          />
+          <input class="order-form__input" type="text" name="user-name" required placeholder="Your name"
+            minlength="3" />
 
           <span class="modal-form-error">
             <svg class="modal-form-icon" width="12" height="12">
-              <use
-                class="warning-icon"
-                href="./images/icons.svg#input"
-              ></use></svg>The name must be between 3 and 25 characters</span
-          >
+              <use class="warning-icon" href="./images/icons.svg#input"></use>
+            </svg>The name must be between 3 and 25 characters</span>
         </label>
         <label class="order-form__wrap">
           <span class="order-form__label">Phone number</span>
-          <input
-            class="order-form__input"
-            type="tel"
-            name="user-phone"
-            required
-            placeholder="+38(0_ _) _ _ _   _ _   _ _"
-            minlength="12"
-          />
+          <input class="order-form__input" type="tel" name="user-phone" required
+            placeholder="+38(0_ _) _ _ _   _ _   _ _" minlength="12" />
 
           <span class="modal-form-error">
             <svg class="modal-form-icon" width="12" height="12">
               <use class="warning-icon" href="./images/icons.svg#input"></use>
             </svg>
-            This phone must be in the format 099 000 00 00</span
-          >
+            This phone must be in the format 099 000 00 00</span>
         </label>
         <label class="order-form__wrap">
           <span class="order-form__label">E-mail</span>
-          <input
-            class="order-form__input"
-            type="email"
-            name="E-mail"
-            required
-            placeholder="example@gmail.com"
-          />
+          <input class="order-form__input" type="email" name="E-mail" required placeholder="example@gmail.com" />
 
           <span class="modal-form-error">
             <svg class="modal-form-icon" width="12" height="12">
               <use class="warning-icon" href="./images/icons.svg#input"></use>
             </svg>
-            Please enter a valid email address</span
-          >
+            Please enter a valid email address</span>
         </label>
       </div>
       <button class="order-btn" type="submit">Send</button>
