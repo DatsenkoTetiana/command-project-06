@@ -32,12 +32,20 @@
         <label class="order-form__wrap">
           <span class="order-form__label">E-mail</span>
           <input class="order-form__input" type="email" name="E-mail" required placeholder="example@gmail.com" />
-
           <span class="modal-form-error">
             <svg class="modal-form-icon" width="12" height="12">
               <use class="warning-icon" href="./images/icons.svg#input"></use>
             </svg>
             Please enter a valid email address</span>
+        </label>
+        <label class="register-form__agreement">
+          <input class="register-checkbox visually-hidden" type="checkbox" name="user-rules" value="rules">
+          <svg class="register-checkbox__icon" width="16" height="15">
+            <use class="register-icon__uncheck" href="./images/icons.svg#uncheck"></use>
+            <use class="register-icon__check" href="./images/icons.svg#check"></use>
+          </svg><span class="register-checkbox__text">By subscribing you agree to with our
+            <a href="" class="register-checkbox__link" target="_blank">Privacy Policy</a>
+          </span>
         </label>
       </div>
       <button class="order-btn" type="submit">Send</button>

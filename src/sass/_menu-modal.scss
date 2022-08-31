@@ -5,6 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(94, 99, 99, 0.7);
+  overflow-y: scroll;
   transition: opacity var(--animation-hv-fcs), visibility var(--animation-hv-fcs);
 }
 
@@ -140,6 +141,10 @@
   }
 }
 
+.privacy__link--modal {
+  margin-bottom: 8px;
+}
+
 .order-form__wrap {
   position: relative;
 }
@@ -161,4 +166,53 @@
   color: #ff705d;
 
   transition: 400ms;
+}
+
+.register-form__agreement {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-checkbox:checked+.register-checkbox__icon .register-icon__uncheck {
+  opacity: 0;
+  transition: opacity var(--animation-hv-fcs);
+}
+
+.register-checkbox__icon {
+  margin-right: 8px;
+  transition: background-color var(--animation-hv-fcs);
+
+  .register-checkbox:checked+& {
+    background-color: #7eb101;
+  }
+}
+
+.register-icon__check {
+  opacity: 0;
+  fill: #ffffff;
+  transition: opacity var(--animation-hv-fcs);
+
+  .register-checkbox:checked+.register-checkbox__icon & {
+    opacity: 1;
+  }
+}
+
+.register-checkbox:checked .register-checkbox__icon {
+  background-color: #7eb101;
+}
+
+.register-checkbox__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  user-select: none;
+}
+
+.register-checkbox__link {
+  color: #7eb101;
+  text-decoration: underline;
 }
