@@ -293,9 +293,9 @@
   height: 42px;
   padding: 11px 22px;
 
-  background-color: var(--accent-bg-color);
+  background-color: #ffffff;
   border-radius: 30px;
-  border: none;
+  border: 0.854167px solid #7EB101;
   font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
@@ -303,11 +303,11 @@
   color: #2c2c2c;
   cursor: pointer;
 
-  transition: var(--animation-hv-fcs);
+  transition: border-color var(--animation-hv-fcs);
 
   &:hover,
   &:focus {
-    background-color: #ffe550;
+    border-color: #ffe550;
   }
 
   @media screen and(max-width:480px) {

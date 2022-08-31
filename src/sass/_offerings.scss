@@ -284,6 +284,8 @@
   cursor: pointer;
   color: #2c2c2c;
 
+  transition: border var(--animation-hv-fcs);
+
   &:hover,
   &:focus {
     border: 2px solid #597d00;
