@@ -11,8 +11,8 @@
   background-image: url('../images/subscribe/banan-3-161.png');
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/subscribe/banan-3-322.png');
   }
 
@@ -22,8 +22,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/subscribe/banan-3-322.png');
   }
 
@@ -36,8 +36,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/subscribe/banan-2-562.png');
   }
 
@@ -50,25 +50,9 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url('../images/subscribe/banan-1-1092.png');
-  }
-
-  &__text {
-    width: 280px;
-
-    @media screen and(max-width: 767px) {
-      width: 100%;
-    }
-
-    @media screen and(min-width: 768px) {
-      width: 656px;
-    }
-
-    @media screen and(min-width: 1280px) {
-      margin: 0;
-    }
   }
 
   &__title {
@@ -128,6 +112,7 @@
 
 .subscribe-form {
   position: relative;
+  animation: fade-in 1500ms ease 100ms 1 alternate both;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -163,7 +148,7 @@
       border-color: #ff705d;
     }
 
-    &:invalid:not(:placeholder-shown) ~ .subscribe-form-error {
+    &:invalid:not(:placeholder-shown)~.subscribe-form-error {
       opacity: 1;
     }
 
@@ -191,7 +176,7 @@
   border-radius: 30px;
 
   cursor: pointer;
-
+  transition: background-color var(--animation-hv-fcs);
   transition: 400ms;
 
   @media screen and (min-width: 768px) {

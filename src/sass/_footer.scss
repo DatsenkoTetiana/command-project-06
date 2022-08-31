@@ -14,9 +14,9 @@
   }
 
   @media screen and(min-width: 320px) {
-    background-size: 55px, 79px, 80px, 72px, 105px, 104px, 60px, 91px;
-    background-position: left top 137px, bottom left 43px, bottom right 24px,
-      bottom left 71px, bottom right 89px, top right, top 25px right,
+    background-size: 55px, 79px, 80px, 72px, 105px, 60px, 60px, 50px;
+    background-position: left top 137px, bottom left 43px, top 130px left 50px,
+      bottom left 71px, bottom right 89px, top 25px right, top 25px right,
       left top 111px;
     background-image: url(../images/footer/footer-mobile/m100.png),
       url(../images/footer/footer-mobile/m79.png),
@@ -28,11 +28,12 @@
       url(../images/footer/footer-mobile/m91.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-mobile/m200.png),
         url(../images/footer/footer-mobile/m158.png),
         url(../images/footer/footer-mobile/m160.png),
+        url(../images/footer/footer-mobile/m144.png),
         url(../images/footer/footer-mobile/m76.png),
         url(../images/footer/footer-mobile/m518.png),
         url(../images/footer/footer-mobile/m410.png),
@@ -55,8 +56,8 @@
       url(../images/footer/footer-tablet/t184.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-tablet/t336.png),
         url(../images/footer/footer-tablet/t342.png),
         url(../images/footer/footer-tablet/t730.png),
@@ -81,8 +82,8 @@
       url(../images/footer/des235.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/footer/des1052.png),
         url(../images/footer/des356.png), url(../images/footer/des364.png),
         url(../images/footer/des392.png), url(../images/footer/des362.png),
@@ -200,6 +201,8 @@
 }
 
 .footer__form {
+  animation: fade-in 1500ms ease 100ms 1 alternate both;
+
   @media screen and(min-width:320px) {
     position: relative;
   }
@@ -259,11 +262,11 @@
     border-color: #ff705d;
   }
 
-  &:invalid:not(:placeholder-shown) ~ .fotter__form--error {
+  &:invalid:not(:placeholder-shown)~.fotter__form--error {
     opacity: 1;
   }
 
-  &:invalid:required:not(:placeholder-shown) + .footer__form--icon {
+  &:invalid:required:not(:placeholder-shown)+.footer__form--icon {
     opacity: 1;
   }
 
@@ -290,12 +293,9 @@
   height: 42px;
   padding: 11px 22px;
 
-  background-color: #ffffff;
-  border: 0.854167px solid #7eb101;
+  background-color: var(--accent-bg-color);
   border-radius: 30px;
-
-  font-family: 'Roboto';
-  font-style: normal;
+  border: none;
   font-weight: 500;
   font-size: 13px;
   line-height: calc(20 / 13);
